@@ -1,0 +1,67 @@
+body{
+    background-color: #1A1A1A;
+}
+
+
+.grid-container{
+    /* grid */
+    display: grid;
+    /* columna */
+    grid-template-columns: 150px 1fr 150px;
+    /* filas */
+    grid-template-rows: repeat(4, 250px);
+    /* grid-template-area */
+    grid-template-areas: 
+    "nav header header"
+    "nav section-uno section-uno"
+    "nav section-dos section-dos"
+    "footer footer footer";
+}
+
+header{
+    background-color: red;
+    /* etiqueta - asignarle el nombre */
+    grid-area: header;
+}
+
+nav{
+    background-color: violet;
+
+    grid-area: nav;
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #1A1A1A;
+}
+
+
+
+
+section{
+    background-color: yellow;
+
+    grid-area: section-uno;
+}
+
+.section-uno{
+    background-color: green;
+
+    grid-area: section-dos;
+}
+
+footer{
+    background-color: black;
+    color: white;
+
+    grid-area: footer
+    ;
+}
+
+
+
+/* media queries */
+
